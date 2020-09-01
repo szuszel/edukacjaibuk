@@ -1,0 +1,123 @@
+@import 'colors';
+
+h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+b {
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+blockquote {
+    background-color: $QUOTE;
+    color: $BACKGROUND;
+    word-wrap: break-word;
+    padding: 1.5rem;
+}
+
+ul, ol {
+    margin: 2rem 0;
+    font-size: 1.5rem;
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+ul {
+    list-style-type: disc;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.red {
+    color: #f12f2f;
+}
+
+ol {
+    list-style-type: decimal;
+
+    ol {
+        list-style-type: lower-alpha;
+    }
+}
+
+li {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    list-style-position: inside;
+}
+
+dfn {
+    font-weight: bold;
+}
+
+.definition {
+    font-size: 1.5rem;
+    margin: 1rem 2rem;
+}
+
+
+.light {
+    font-weight: normal;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: $TEXTCOLOR;
+    padding: .5rem .75rem;
+    color: $BACKGROUND;
+    font-weight: bold;
+    font-size: 1.25rem;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: transparent;
+        color: $TEXTCOLOR;
+        border: 3px solid $TEXTCOLOR;
+    }
+}
+
+.no_top_margin {
+    margin-top: 0;
+}
+
+.h3 {
+    margin-block: 1rem;
+    font-weight: bold;
+}
+
+.flex_col {
+    display: flex;
+    justify-content: space-between;
+}

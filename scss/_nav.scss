@@ -1,0 +1,109 @@
+@import 'colors';
+
+@media screen and (max-width: 1280px) {
+    aside {
+        display: none;
+    }
+}
+
+aside nav {
+    position: sticky;
+    top: 3rem;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    height: calc(100vh - 8rem);
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        width: .5rem;
+        background-color: transparent;
+        padding: 1rem 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: lighten($NAVBACKGROUND, 10%);
+        border: 3px solid $NAVBACKGROUND;
+
+        &:hover {
+            border-width: 0;
+        }
+    }
+
+    .smool {
+        font-size: 1rem;
+
+        a span {
+            overflow: hidden hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 1; /* number of lines to show */
+            -webkit-box-orient: vertical;
+            line-height: 1.5;
+        }
+    }
+
+    background-color: $NAVBACKGROUND;
+
+    a {
+        display: block;
+        box-sizing: border-box;
+        padding: .75rem 1rem;
+        border: 3px solid transparent;
+
+        &:hover {
+            border: 3px solid lighten($NAVBACKGROUND, 20%);
+            background-color: lighten($NAVBACKGROUND, 5%);
+        }
+    }
+
+    .nolink {
+        padding: .75rem 1rem;
+        display: block;
+    }
+}
+
+.home_link {
+    padding: .25rem 0;
+}
+
+@media screen and (min-width: 1280px) {
+    .bottom_nav  {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .bottom_nav nav {
+        margin: 3rem;
+    }
+}
+
+
+.bottom_nav {
+    position: sticky;
+    bottom: 0;
+
+    nav {
+        background-color: $NAVBACKGROUND;
+
+        display: flex;
+        justify-content: space-around;
+
+        a {
+            padding: 1rem;
+            flex: 1;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            span {
+                margin-top: .5rem;
+            }
+
+            img {
+                height: 2rem;
+            }
+        }
+    }
+}
